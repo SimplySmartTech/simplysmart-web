@@ -1,0 +1,13 @@
+.nav-style{
+  background-color: #0c1b2f; 
+  display: flex;
+}
+
+.nav-font{
+  color: white;
+}
+
+.navbar-flex{
+  justify-content: flex-end;
+  padding-right: 2rem;
+}

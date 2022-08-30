@@ -1,0 +1,19 @@
+/ Latest compiled and minified CSS
+%nav.navbar.navbar-expand-lg.fixed-top.nav-style
+  %a.navbar-brand{href: ""} 
+  = image_tag("logo", :alt => "logo", :height => "75rem")
+  %button.navbar-toggler{"aria-controls" => "navbarNavAltMarkup", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNavAltMarkup", "data-toggle" => "collapse", type: "button"}
+    %span.navbar-toggler-icon
+  #navbarNavAltMarkup.collapse.navbar-collapse.navbar-flex
+    .navbar-nav
+      %a.nav-item.nav-link.active{href: "#"}
+        .nav-font 
+          HOME
+      %a.nav-item.nav-link{href: "#services"} 
+        .nav-font
+          SERVICES
+      %a.nav-item.nav-link{href: "#clients"} 
+        .nav-font
+          CLIENTS
+      %a.nav-item.nav-link{href: "#leadership"} 
+        .nav-font

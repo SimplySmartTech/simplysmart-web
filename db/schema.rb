@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_01_091437) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_01_092755) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "client_testimonials", force: :cascade do |t|
+    t.string "testimonial", default: "-"
+    t.string "author_name", default: "-"
+    t.string "author_designation", default: "-"
+    t.bigint "client_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["client_id"], name: "index_client_testimonials_on_client_id"
+  end
 
   create_table "clients", force: :cascade do |t|
     t.string "name", default: "-"
@@ -21,4 +31,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_01_091437) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "client_testimonials", "clients"
 end

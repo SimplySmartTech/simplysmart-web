@@ -1,3 +1,3 @@
 class Client < ApplicationRecord
-  has_many :client_testimonial
+  has_many :client_testimonials
 end

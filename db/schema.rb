@@ -23,6 +23,23 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_103842) do
     t.index ["service_id"], name: "index_attachments_on_service_id"
   end
 
+  create_table "client_testimonials", force: :cascade do |t|
+    t.string "testimonial", default: "-"
+    t.string "name", default: "-"
+    t.string "designation", default: "-"
+    t.bigint "client_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["client_id"], name: "index_client_testimonials_on_client_id"
+  end
+
+  create_table "clients", force: :cascade do |t|
+    t.string "name", default: "-"
+    t.string "logo_image", default: "-"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "features", force: :cascade do |t|
     t.string "name"
     t.bigint "service_id"
@@ -39,5 +56,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_103842) do
   end
 
   add_foreign_key "attachments", "services"
+  add_foreign_key "client_testimonials", "clients"
   add_foreign_key "features", "services"
 end

@@ -1,4 +1,4 @@
 class Service < ApplicationRecord
-    has_many :attachment
-    has_many :feature
+    has_many :attachments
+    has_many :features
 end

@@ -10,9 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_06_091616) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_06_103842) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "attachments", force: :cascade do |t|
+    t.string "attachment_url"
+    t.bigint "service_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "attachment_type"
+    t.index ["service_id"], name: "index_attachments_on_service_id"
+  end
 
   create_table "client_testimonials", force: :cascade do |t|
     t.string "testimonial", default: "-"
@@ -31,5 +40,22 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_091616) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "features", force: :cascade do |t|
+    t.string "name"
+    t.bigint "service_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["service_id"], name: "index_features_on_service_id"
+  end
+
+  create_table "services", force: :cascade do |t|
+    t.string "service_name"
+    t.string "service_info"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "attachments", "services"
   add_foreign_key "client_testimonials", "clients"
+  add_foreign_key "features", "services"
 end

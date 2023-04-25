@@ -15,7 +15,7 @@
 # gem "pg"
 #
 default: &default
-  adapter: postgresql
+  adapter: sqlite3
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
@@ -23,6 +23,9 @@ default: &default
 
 development:
   <<: *default
+  #username: postgres
+  #password: josh123
+  #host: localhost
   database: simplysmart_web_development
 
   # The specified database role being used to connect to postgres.

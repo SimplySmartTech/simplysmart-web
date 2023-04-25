@@ -11,12 +11,9 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2022_09_06_103842) do
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "attachments", force: :cascade do |t|
     t.string "attachment_url"
-    t.bigint "service_id"
+    t.integer "service_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "attachment_type"
@@ -27,7 +24,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_103842) do
     t.string "testimonial", default: "-"
     t.string "name", default: "-"
     t.string "designation", default: "-"
-    t.bigint "client_id"
+    t.integer "client_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["client_id"], name: "index_client_testimonials_on_client_id"
@@ -42,7 +39,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_103842) do
 
   create_table "features", force: :cascade do |t|
     t.string "name"
-    t.bigint "service_id"
+    t.integer "service_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["service_id"], name: "index_features_on_service_id"

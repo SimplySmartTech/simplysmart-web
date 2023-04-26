@@ -13,6 +13,7 @@
       #nav-bar 
         = render partial:'shared/navbar'
     %main.ss-main-section.flex-1
-      %span Hello
+      %section.ss-carousel-section
+        = render partial:'shared/carousel'
     / = yield
     / = render :partial => 'shared/footer', :locals => { :info => @info }

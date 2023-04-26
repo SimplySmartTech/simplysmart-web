@@ -10857,4 +10857,27 @@ body {
 .ss-site-logo {
   width: auto;
   height: 2.5rem;
+}
+
+.ss-carousel-section {
+  background: transparent url(site-bg.png) no-repeat top center;
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+}
+
+.ss-carousel .carousel-item .heading-box {
+  max-width: 500px;
+}
+.ss-carousel .carousel-item .carousel-heading {
+  font-size: 3.25rem;
+  color: #23A1BB;
+  font-weight: 500;
+}
+.ss-carousel .carousel-inner {
+  padding: 4.5rem;
+}
+.ss-carousel .carousel-slider-img {
+  width: auto;
+  height: 28rem;
 }/*# sourceMappingURL=application.css.map */

@@ -36,8 +36,34 @@ body {
   height: 2.5rem;
 }
 
-.ss-main-section {
-  // background:transparent url(site-bg.png) no-repeat top center;
-  // background-size: cover;
-  //   background-attachment: fixed;
+.ss-carousel-section{
+  background:transparent url(site-bg.png) no-repeat top center;
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+}
+
+.ss-carousel {
+
+  .carousel-item {
+
+    .heading-box {
+      max-width: 500px;
+    }
+
+    .carousel-heading {
+      font-size: 3.25rem;
+      color: $blue-pelorous;
+      font-weight: 500;
+    }
+  }
+
+  .carousel-inner {
+    padding: 4.5rem;
+  }
+
+  .carousel-slider-img {
+    width: auto;
+    height: 28rem;
+  }
 }

@@ -1,3 +1,43 @@
+html,
 body {
-  background-color: red;
+  min-height: 100vh;
+}
+
+body {
+  font-family: $font-family-base;
+  color: $gray-20;
+  @include scrollbars();
+  display: flex;
+  flex-direction: column;
+}
+
+//header
+.ss-navbar {
+
+  .nav-item {
+    font-weight: bold;
+    &:not(:first-child) {
+      @include media-breakpoint-up(lg) {
+        border-left: 1px solid $raven-black;
+      }
+    }
+
+    .nav-link {
+      color: $raven-black;
+      &.active {
+        color: $orange-cinnabar;
+      }
+    }
+  }
+}
+
+.ss-site-logo {
+  width: auto;
+  height: 2.5rem;
+}
+
+.ss-main-section {
+  // background:transparent url(site-bg.png) no-repeat top center;
+  // background-size: cover;
+  //   background-attachment: fixed;
 }

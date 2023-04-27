@@ -12,8 +12,8 @@
     %header.ss-header.bg-white
       #nav-bar 
         = render partial:'shared/navbar'
-    %main.ss-main-section.flex-1
+    %main.ss-main-section.d-flex.flex-column.flex-1
       %section.ss-carousel-section
         = render partial:'shared/carousel'
-    / = yield
-    / = render :partial => 'shared/footer', :locals => { :info => @info }
+      %section.ss-content-section.d-flex.flex-column.flex-1
+        = yield

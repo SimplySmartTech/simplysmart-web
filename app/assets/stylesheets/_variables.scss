@@ -11,3 +11,11 @@ $font-family-poppins:  'Poppins', sans-serif;
 $font-family-base: $font-family-poppins;
 
 $body-bg: $blue-terrace-pool;
+
+$blue: $blue-pelorous;
+$colors: (
+  "blue": $blue,
+);
+
+// Theme Colors Overrides
+$primary: $blue;

@@ -64,6 +64,27 @@ body {
 
   .carousel-slider-img {
     width: auto;
-    height: 28rem;
+    height: 32rem;
+  }
+}
+
+.ss-content-section{
+  margin-top:-6rem;
+}
+
+.ss-content-section, .ss-page-content {
+  padding: 0 6rem;
+}
+
+.ss-card {
+  box-shadow: -8px -8px 24px rgba(0, 0, 0, 0.05), 8px 8px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 75px 75px 0px 0px;
+
+  p {
+    color: $gray-20;
+
+    span {
+      color: $orange-cinnabar;
+    }
   }
 }

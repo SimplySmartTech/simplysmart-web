@@ -68,8 +68,8 @@ body {
   }
 }
 
-.ss-content-section{
-  margin-top:-6rem;
+.ss-main-section {
+  background-color: $blue-terrace-pool;
 }
 
 .ss-content-section, .ss-page-content {
@@ -79,15 +79,21 @@ body {
 .ss-card {
   box-shadow: -8px -8px 24px rgba(0, 0, 0, 0.05), 8px 8px 24px rgba(0, 0, 0, 0.05);
   border-radius: 75px 75px 0px 0px;
+  margin-top:-6rem;
 
   p {
     color: $gray-20;
   }
 }
 
-.benifits-list-item {
+.benefits-list-item {
   padding: 0.5rem 1rem;
   border-radius: 1.25rem;
   max-width: 12rem;
   height: 6.25rem;
+}
+
+.meter-img {
+  width: 15rem;
+  height: auto;
 }

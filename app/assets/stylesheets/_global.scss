@@ -37,10 +37,17 @@ body {
 }
 
 .ss-carousel-section{
-  background:transparent url(site-bg.png) no-repeat top center;
+  background:transparent url(site-mobile-bg.png) no-repeat;
   background-size: cover;
-  background-position: bottom center;
-  height: 45rem;
+  background-position:top -5rem center;
+  height: 40rem;
+  
+  @include media-breakpoint-up(md) {
+    background:transparent url(site-bg.png) no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 45rem;
+  }
 }
 
 .ss-carousel {
@@ -48,23 +55,36 @@ body {
   .carousel-item {
 
     .heading-box {
-      max-width: 500px;
+      @include media-breakpoint-up(lg) {
+        max-width: 500px;
+      }
     }
 
     .carousel-heading {
-      font-size: 3.25rem;
+      font-size: 2rem;
       color: $blue-pelorous;
       font-weight: 500;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 3.25rem;
+      }
     }
   }
 
   .carousel-inner {
-    padding: 4.5rem;
+    padding: 1rem;
+
+    @include media-breakpoint-up(lg) {
+      padding: 4.5rem;
+    }
   }
 
   .carousel-slider-img {
-    width: auto;
-    height: 32rem;
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      width: auto;
+      height: 32rem;
+    }
   }
 }
 

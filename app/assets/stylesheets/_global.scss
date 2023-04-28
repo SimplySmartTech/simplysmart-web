@@ -79,6 +79,12 @@ body {
     }
   }
 
+  .carousel-img-wrap {
+    @include media-breakpoint-up(lg) {
+      flex: 1;
+    }
+  }
+  
   .carousel-slider-img {
     width: 100%;
     @include media-breakpoint-up(lg) {

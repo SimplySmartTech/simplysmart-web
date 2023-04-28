@@ -10885,6 +10885,11 @@ body {
     padding: 4.5rem;
   }
 }
+@media (min-width: 992px) {
+  .ss-carousel .carousel-img-wrap {
+    flex: 1;
+  }
+}
 .ss-carousel .carousel-slider-img {
   width: 100%;
 }

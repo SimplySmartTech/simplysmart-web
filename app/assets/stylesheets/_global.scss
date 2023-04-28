@@ -98,8 +98,18 @@ body {
   background-color: $blue-terrace-pool;
 }
 
+.ss-content-section {
+  padding: 0 1rem;
+}
+
+.ss-page-content {
+  padding: 0;
+}
+
 .ss-content-section, .ss-page-content {
-  padding: 0 6rem;
+  @include media-breakpoint-up(lg) {
+    padding: 0 6rem;
+  }
 }
 
 .ss-card {

@@ -13,9 +13,13 @@ $font-family-base: $font-family-poppins;
 $body-bg: $blue-terrace-pool;
 
 $blue: $blue-pelorous;
+$orange:$orange-cinnabar;
+
 $colors: (
   "blue": $blue,
+  "orange": $orange,
 );
 
 // Theme Colors Overrides
 $primary: $blue;
+$secondary: $orange;

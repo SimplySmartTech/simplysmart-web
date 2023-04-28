@@ -87,6 +87,10 @@ body {
   
   .carousel-slider-img {
     width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 70%;
+    }
     @include media-breakpoint-up(lg) {
       width: auto;
       height: 32rem;
@@ -115,7 +119,15 @@ body {
 .ss-card {
   box-shadow: -8px -8px 24px rgba(0, 0, 0, 0.05), 8px 8px 24px rgba(0, 0, 0, 0.05);
   border-radius: 75px 75px 0px 0px;
-  margin-top:-6rem;
+  margin-top:-4rem;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-top:-6rem;
+  }
 
   p {
     color: $gray-20;

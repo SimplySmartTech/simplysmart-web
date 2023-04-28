@@ -10893,6 +10893,11 @@ body {
 .ss-carousel .carousel-slider-img {
   width: 100%;
 }
+@media (min-width: 768px) {
+  .ss-carousel .carousel-slider-img {
+    width: 70%;
+  }
+}
 @media (min-width: 992px) {
   .ss-carousel .carousel-slider-img {
     width: auto;
@@ -10921,7 +10926,17 @@ body {
 .ss-card {
   box-shadow: -8px -8px 24px rgba(0, 0, 0, 0.05), 8px 8px 24px rgba(0, 0, 0, 0.05);
   border-radius: 75px 75px 0px 0px;
-  margin-top: -6rem;
+  margin-top: -4rem;
+}
+@media (min-width: 768px) {
+  .ss-card {
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  .ss-card {
+    margin-top: -6rem;
+  }
 }
 .ss-card p {
   color: #333333;

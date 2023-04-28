@@ -10837,9 +10837,22 @@ body {
 }
 .ss-navbar .nav-item .nav-link {
   color: #3F3B3C;
+  text-align: right;
+}
+@media (min-width: 992px) {
+  .ss-navbar .nav-item .nav-link {
+    text-align: center;
+  }
 }
 .ss-navbar .nav-item .nav-link.active {
   color: #F04F22;
+}
+
+.ss-header .navbar-toggler:focus {
+  box-shadow: none;
+}
+.ss-header .navbar-toggler-icon {
+  background-image: url(hamburger-menu.png);
 }
 
 .ss-site-logo {

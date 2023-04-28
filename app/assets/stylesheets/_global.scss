@@ -24,10 +24,28 @@ body {
 
     .nav-link {
       color: $raven-black;
+      text-align: right;
+
+      @include media-breakpoint-up(lg) {
+        text-align: center;
+      }
       &.active {
         color: $orange-cinnabar;
       }
     }
+  }
+}
+
+.ss-header {
+
+  .navbar-toggler {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .navbar-toggler-icon {
+    background-image: url(hamburger-menu.png);
   }
 }
 

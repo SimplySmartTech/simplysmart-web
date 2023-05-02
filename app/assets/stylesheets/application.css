@@ -10871,7 +10871,6 @@ body {
     background: transparent url(site-bg.png) no-repeat;
     background-size: cover;
     background-position: bottom center;
-    height: 45rem;
   }
 }
 
@@ -10905,6 +10904,7 @@ body {
 }
 .ss-carousel .carousel-slider-img {
   width: 100%;
+  height: auto;
 }
 @media (min-width: 768px) {
   .ss-carousel .carousel-slider-img {
@@ -10914,7 +10914,7 @@ body {
 @media (min-width: 992px) {
   .ss-carousel .carousel-slider-img {
     width: auto;
-    height: 32rem;
+    height: 28rem;
   }
 }
 

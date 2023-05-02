@@ -10841,9 +10841,22 @@ body {
 }
 .ss-navbar .nav-item .nav-link {
   color: #3F3B3C;
+  text-align: right;
+}
+@media (min-width: 992px) {
+  .ss-navbar .nav-item .nav-link {
+    text-align: center;
+  }
 }
 .ss-navbar .nav-item .nav-link.active {
   color: #F04F22;
+}
+
+.ss-header .navbar-toggler:focus {
+  box-shadow: none;
+}
+.ss-header .navbar-toggler-icon {
+  background-image: url(hamburger-menu.png);
 }
 
 .ss-site-logo {
@@ -10852,40 +10865,95 @@ body {
 }
 
 .ss-carousel-section {
-  background: transparent url(site-bg.png) no-repeat top center;
+  background: transparent url(site-mobile-bg.png) no-repeat;
   background-size: cover;
-  background-position: bottom center;
-  height: 45rem;
+  background-position: top -5rem center;
+  height: 40rem;
+}
+@media (min-width: 768px) {
+  .ss-carousel-section {
+    background: transparent url(site-bg.png) no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 45rem;
+  }
 }
 
-.ss-carousel .carousel-item .heading-box {
-  max-width: 500px;
+@media (min-width: 992px) {
+  .ss-carousel .carousel-item .heading-box {
+    max-width: 500px;
+  }
 }
 .ss-carousel .carousel-item .carousel-heading {
-  font-size: 3.25rem;
+  font-size: 2rem;
   color: #23A1BB;
   font-weight: 500;
 }
+@media (min-width: 992px) {
+  .ss-carousel .carousel-item .carousel-heading {
+    font-size: 3.25rem;
+  }
+}
 .ss-carousel .carousel-inner {
-  padding: 4.5rem;
+  padding: 1rem;
+}
+@media (min-width: 992px) {
+  .ss-carousel .carousel-inner {
+    padding: 4.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .ss-carousel .carousel-img-wrap {
+    flex: 1;
+  }
 }
 .ss-carousel .carousel-slider-img {
-  width: auto;
-  height: 32rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .ss-carousel .carousel-slider-img {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  .ss-carousel .carousel-slider-img {
+    width: auto;
+    height: 32rem;
+  }
 }
 
 .ss-main-section {
   background-color: #A0D6DF;
 }
 
-.ss-content-section, .ss-page-content {
-  padding: 0 6rem;
+.ss-content-section {
+  padding: 0 1rem;
+}
+
+.ss-page-content {
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .ss-content-section, .ss-page-content {
+    padding: 0 6rem;
+  }
 }
 
 .ss-card {
   box-shadow: -8px -8px 24px rgba(0, 0, 0, 0.05), 8px 8px 24px rgba(0, 0, 0, 0.05);
   border-radius: 75px 75px 0px 0px;
-  margin-top: -6rem;
+  margin-top: -4rem;
+}
+@media (min-width: 768px) {
+  .ss-card {
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  .ss-card {
+    margin-top: -6rem;
+  }
 }
 .ss-card p {
   color: #333333;

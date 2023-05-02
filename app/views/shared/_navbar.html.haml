@@ -1,15 +1,15 @@
 %nav.navbar.navbar-expand-lg.p-3  
   %a.navbar-brand.px-5.py-0.me-0{:href => ""}
     = image_tag("logo", :alt => "logo", :class => "ss-site-logo")
-  %button.navbar-toggler{"aria-controls" => "navbarScroll", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarScroll", "data-bs-toggle" => "collapse", type: "button"}
+  %button.navbar-toggler{"aria-controls" => "navbarScroll", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarScroll", "data-bs-toggle" => "collapse", type: "button", :class => "border-0"}
     %span.navbar-toggler-icon
   #navbarScroll.collapse.navbar-collapse.ss-navbar
     %ul.navbar-nav.ms-auto.my-2.my-lg-0.navbar-nav-scroll
       %li.nav-item
-        %a{"aria-current" => "page", href: "/", class: "nav-link px-4 py-0 #{active_class(root_path)}"} Home
+        %a{"aria-current" => "page", href: "/", class: "nav-link px-2 px-lg-4 py-1 py-lg-0 #{active_class(root_path)}"} Home
       %li.nav-item
-        %a{href: "/solutions", class: "nav-link px-4 py-0 #{active_class(solutions_path)}"} Solutions
+        %a{href: "/solutions", class: "nav-link px-2 px-lg-4 py-1 py-lg-0 #{active_class(solutions_path)}"} Solutions
       %li.nav-item
-        %a{href: "/clients", class: "nav-link px-4 py-0 #{active_class(clients_path)}"} Clients
+        %a{href: "/clients", class: "nav-link px-2 px-lg-4 py-1 py-lg-0 #{active_class(clients_path)}"} Clients
       %li.nav-item
-        %a{href: "/contact_us", class: "nav-link px-4 py-0 #{active_class(contact_us_path)}"} Contact Us
+        %a{href: "/contact_us", class: "nav-link px-2 px-lg-4 py-1 py-lg-0 #{active_class(contact_us_path)}"} Contact Us

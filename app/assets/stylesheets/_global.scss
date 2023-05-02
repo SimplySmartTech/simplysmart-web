@@ -163,3 +163,18 @@ body {
   width: 15rem;
   height: auto;
 }
+
+.client-list {
+  grid-gap: 3rem;
+
+  .client-item {
+    height: 100%;
+    border-radius: 0.75rem;
+
+    img {
+      width: 14.5rem;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

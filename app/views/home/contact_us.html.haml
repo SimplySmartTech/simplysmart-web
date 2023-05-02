@@ -5,42 +5,42 @@
         %h2.fw-bold.text-primary.mb-4 Contact Us
         %div.row.gy-5.gy-lg-0
           %div.col-md-6
-            .card
+            .card.border.border-primary
               .card-body
                 %form.d-grid.gap-4(gutter="2" action="/send_enquiry" method="post")
                   %div.d-flex.flex-column.flex-xl-row.gap-3
                     %div.form-group.flex-1
                       %label.text-primary.fw-bold(for="full-name") Full Name
-                      %input#full-name.form-control.shadow.border-0(type="text" name="full_name" required)
+                      %input#full-name.form-control(type="text" name="full_name" required)
                     
                     %div.form-group.flex-1
                       %label.text-primary.fw-bold(for="subject") Subject
-                      %input#subject.form-control.shadow.border-0(type="text" name="subject" required)
+                      %input#subject.form-control(type="text" name="subject" required)
                     
                   %div.d-flex.flex-column.flex-xl-row.gap-3
                     %div.form-group.flex-1
                       %label.text-primary.fw-bold(for="email") Email
-                      %input#email.form-control.shadow.border-0(type="email" name="email" required)
+                      %input#email.form-control(type="email" name="email" required)
                     
                     %div.form-group.flex-1
                       %label.text-primary.fw-bold(for="mobile-no") Mobile Number
-                      %input#mobile-no.form-control.shadow.border-0(type="tel" name="mobile_no" required)
+                      %input#mobile-no.form-control(type="tel" name="mobile_no" required)
 
                   %div
                     %div.form-group
                       %label.text-primary.fw-bold(for="message") Message
-                      %textarea#message.form-control.shadow.border-0(name="message" required)
+                      %textarea#message.form-control(name="message" required)
                   %div.text-center 
                     %input.btn.btn-primary.text-white.px-4(type="submit" value="Submit")
           %div.col-md-6
             %div.d-grid.gap-3.h-100
-              .card
+              .card.border.border-primary
                 .card-body
                   %div
                     %h4.text-primary.fw-bold.mb-3 Pune:
                     %p.mb-0 Plot 4, S. No. 17/1-B, Kothrud Ind. Estate, Kothrud, Pune 411 038
                     %p.mb-0 Phone: +91 9916784858
-              .card
+              .card.border.border-primary
                 .card-body
                   %div
                     %h4.text-primary.fw-bold.mb-3 Bengaluru:

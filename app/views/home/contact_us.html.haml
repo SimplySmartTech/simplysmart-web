@@ -1,49 +1,49 @@
 %div.ss-page-content.d-flex.flex-column.flex-1
   .card.ss-card.border-0.flex-1
-    .card-body.d-grid.gap-5.p-5
+    .card-body.d-grid.gap-5.px-4.py-5.p-lg-5
       %div
         %h2.fw-bold.text-primary.mb-4 Contact Us
-      .container
-        %div.row
+        %div.row.gy-5.gy-lg-0
           %div.col-md-6
             .card
               .card-body
-                %form.row(gutter="2" action="/send_enquiry" method="post")
-                  .col-md-6
-                    %div.form-group
-                      %label(for="full-name") Full Name
+                %form.d-grid.gap-4(gutter="2" action="/send_enquiry" method="post")
+                  %div.d-flex.flex-column.flex-xl-row.gap-3
+                    %div.form-group.flex-1
+                      %label.text-primary.fw-bold(for="full-name") Full Name
                       %input#full-name.form-control(type="text" name="full_name" required)
                     
-                    %div.form-group.mt-3
-                      %label(for="subject") Subject
+                    %div.form-group.flex-1
+                      %label.text-primary.fw-bold(for="subject") Subject
                       %input#subject.form-control(type="text" name="subject" required)
                     
-                  .col-md-6
-                    %div.form-group
-                      %label(for="email") Email
+                  %div.d-flex.flex-column.flex-xl-row.gap-3
+                    %div.form-group.flex-1
+                      %label.text-primary.fw-bold(for="email") Email
                       %input#email.form-control(type="email" name="email" required)
                     
-                    %div.form-group.mt-3
-                      %label(for="mobile-no") Mobile Number
+                    %div.form-group.flex-1
+                      %label.text-primary.fw-bold(for="mobile-no") Mobile Number
                       %input#mobile-no.form-control(type="tel" name="mobile_no" required)
 
-                  .col-md-12.mt-4
+                  %div
                     %div.form-group
-                      %label(for="message") Message
+                      %label.text-primary.fw-bold(for="message") Message
                       %textarea#message.form-control(name="message" required)
-                  .col-md-12.text-center.mt-4 
-                    %input.btn.btn-primary(type="submit" value="Submit")
+                  %div.text-center 
+                    %input.btn.btn-primary.text-white.px-4(type="submit" value="Submit")
           %div.col-md-6
-            .card
-              .card-body
-                %div
-                  %h6.fw-bold Pune:
-                  %p Plot 4, S. No. 17/1-B, Kothrud Ind. Estate, Kothrud, Pune 411 038
-                  %p Phone: +91 9916784858
-            .card
-              .card-body
-                %div
-                  %h6.fw-bold Bengaluru:
-                  %p No. 932, 1st Floor, 1st Main Road, AECS Layout, B-Block, Singasandra, Bengaluru 560 068
-                  %p Phone: +91 9916784858
+            %div.d-grid.gap-3.h-100
+              .card
+                .card-body
+                  %div
+                    %h4.text-primary.fw-bold.mb-3 Pune:
+                    %p.mb-0 Plot 4, S. No. 17/1-B, Kothrud Ind. Estate, Kothrud, Pune 411 038
+                    %p.mb-0 Phone: +91 9916784858
+              .card
+                .card-body
+                  %div
+                    %h4.text-primary.fw-bold.mb-3 Bengaluru:
+                    %p.mb-0 No. 932, 1st Floor, 1st Main Road, AECS Layout, B-Block, Singasandra, Bengaluru 560 068
+                    %p.mb-0 Phone: +91 9916784858
                 

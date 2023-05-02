@@ -6,12 +6,10 @@
   #navbarScroll.collapse.navbar-collapse.ss-navbar
     %ul.navbar-nav.ms-auto.my-2.my-lg-0.navbar-nav-scroll
       %li.nav-item
-        %a.nav-link.px-4.py-0.active{"aria-current" => "page", href: "/"} Home
+        %a{"aria-current" => "page", href: "/", class: "nav-link px-4 py-0 #{active_class(root_path)}"} Home
       %li.nav-item
-        %a.nav-link.px-4.py-0{href: "/about_us"} About Us
+        %a{href: "/solutions", class: "nav-link px-4 py-0 #{active_class(solutions_path)}"} Solutions
       %li.nav-item
-        %a.nav-link.px-4.py-0{href: "/solutions"} Solutions
+        %a{href: "/clients", class: "nav-link px-4 py-0 #{active_class(clients_path)}"} Clients
       %li.nav-item
-        %a.nav-link.px-4.py-0{href: "/clients"} Clients
-      %li.nav-item
-        %a.nav-link.px-4.py-0{href: "/contact_us"} Contact Us
+        %a{href: "/contact_us", class: "nav-link px-4 py-0 #{active_class(contact_us_path)}"} Contact Us

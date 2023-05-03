@@ -1,22 +1,15 @@
-%nav.navbar.navbar-expand-lg.fixed-top.nav-style
-  %a.navbar-brand{href: ""} 
-  = image_tag("logo", :alt => "logo", :height => "75rem")
-  %button.navbar-toggler{"aria-controls" => "navbarNavAltMarkup", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarNavAltMarkup", "data-bs-toggle" => "collapse", type: "button"}
+%nav.navbar.navbar-expand-lg.p-3  
+  %a.navbar-brand.px-5.py-0.me-0{:href => ""}
+    = image_tag("logo", :alt => "logo", :class => "ss-site-logo")
+  %button.navbar-toggler{"aria-controls" => "navbarScroll", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarScroll", "data-bs-toggle" => "collapse", type: "button", :class => "border-0"}
     %span.navbar-toggler-icon
-  #navbarNavAltMarkup.collapse.navbar-collapse.navbar-flex
-    .navbar-nav
-      %a.nav-item.nav-link.active{href: "/"}
-        .nav-font 
-          Home
-      %a.nav-item.nav-link{href: "/about_us"} 
-        .nav-font
-          About us
-      %a.nav-item.nav-link{href: "/solutions"} 
-        .nav-font
-          Solutions
-      %a.nav-item.nav-link{href: "/clients"} 
-        .nav-font
-          Clients
-      %a.nav-item.nav-link{href: "/contact_us"} 
-        .nav-font
-          Contact Us
+  #navbarScroll.collapse.navbar-collapse.ss-navbar
+    %ul.navbar-nav.ms-auto.my-2.my-lg-0.navbar-nav-scroll
+      %li.nav-item
+        %a{"aria-current" => "page", href: "/", class: "nav-link px-2 px-lg-4 py-1 py-lg-0 #{active_class(root_path)}"} Home
+      %li.nav-item
+        %a{href: "/solutions", class: "nav-link px-2 px-lg-4 py-1 py-lg-0 #{active_class(solutions_path)}"} Solutions
+      %li.nav-item
+        %a{href: "/clients", class: "nav-link px-2 px-lg-4 py-1 py-lg-0 #{active_class(clients_path)}"} Clients
+      %li.nav-item
+        %a{href: "/contact_us", class: "nav-link px-2 px-lg-4 py-1 py-lg-0 #{active_class(contact_us_path)}"} Contact Us

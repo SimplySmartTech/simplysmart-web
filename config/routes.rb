@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get '/solutions' => "home#solutions"
   get '/clients' => "home#clients"
   get 'contact_us' => "home#contact_us"
+  post 'send_enquiry' => "home#send_enquiry"
 end

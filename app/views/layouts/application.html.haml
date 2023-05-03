@@ -9,7 +9,11 @@
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
   %body
-    #nav-bar 
-      = render partial:'shared/navbar'
-    = yield
-    = render :partial => 'shared/footer', :locals => { :info => @info }
+    %header.ss-header.bg-white
+      #nav-bar 
+        = render partial:'shared/navbar'
+    %main.ss-main-section.d-flex.flex-column.flex-1
+      %section.ss-carousel-section
+        = render partial:'shared/carousel'
+      %section.ss-content-section.d-flex.flex-column.flex-1
+        = yield

@@ -1,0 +1,25 @@
+// Color
+$white: #fff;
+$black: #000;
+$raven-black:#3F3B3C;
+$gray-20: #333333;
+$blue-terrace-pool: #A0D6DF;
+$blue-pelorous:#23A1BB;
+$orange-cinnabar: #F04F22;
+
+$font-family-poppins:  'Poppins', sans-serif;
+$font-family-base: $font-family-poppins;
+
+$blue: $blue-pelorous;
+$orange:$orange-cinnabar;
+
+$colors: (
+  "blue": $blue,
+  "orange": $orange,
+);
+
+// Theme Colors Overrides
+$primary: $blue;
+$secondary: $orange;
+
+$carousel-transition-duration: 0.5s !important;

@@ -13,4 +13,9 @@ class HomeController < ApplicationController
 
   def contact_us
   end
+
+  def send_enquiry
+    Notifier.enquiry(params).deliver_now!
+    redirect_to contact_us_path
+  end
 end

@@ -10999,7 +10999,6 @@ footer{
   position: relative;
   width: 100%;
   background: #0c1b2f;
-  min-height: 50px;
   padding: 5px 10px;
   display: flex;
   flex-wrap: nowrap;

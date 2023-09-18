@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get '/clients' => "home#clients"
   get 'contact_us' => "home#contact_us"
   post 'send_enquiry' => "home#send_enquiry"
+  get '/privacy_policy' => "home#privacy_policy"
 end

@@ -18,4 +18,7 @@ class HomeController < ApplicationController
     Notifier.enquiry(params).deliver_now!
     redirect_to contact_us_path
   end
+
+  def privacy_policy
+  end
 end

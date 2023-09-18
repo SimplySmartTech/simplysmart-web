@@ -2,12 +2,14 @@
 %html
   %head
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title SimplysmartWeb
+    %title Simplysmart Technolgies Pvt Ltd
     %meta{content: "width=device-width,initial-scale=1", name: "viewport"}/
+    %meta{:name => "description", :content => "Discover SimplySmart, the powerful water management tool for both residential and commercial projects. Get real-time data on water consumption and other important parameters with our innovative water meter, data recorder, and cloud-based software platform. Invest in the SimplySmart water metering solution and enjoy access to vital water consumption data with a yearly subscription."}
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
+    = favicon_link_tag asset_path('logo')
   %body
     %header.ss-header.bg-white
       #nav-bar 

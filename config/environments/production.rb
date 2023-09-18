@@ -91,4 +91,18 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_url_options = { host: 'simplysmart.tech' }
+
+  config.action_mailer.default charset: 'utf-8'
+  config.action_mailer.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+      :address              => ENV['SES_HOST_URL'],
+      :port                 => 587,
+      :domain               => "simplysmart.tech",
+      :user_name            => ENV['SES_SMTP_USERNAME'],
+      :password             => ENV['SES_SMTP_PASSWORD'],
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+}
 end

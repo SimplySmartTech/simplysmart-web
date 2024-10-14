@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get 'contact_us' => "home#contact_us"
   post 'send_enquiry' => "home#send_enquiry"
   get '/privacy_policy' => "home#privacy_policy"
+  get '/terms-and-conditions' => "home#terms_and_conditions"
 end

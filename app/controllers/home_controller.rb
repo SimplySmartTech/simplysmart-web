@@ -24,4 +24,10 @@ class HomeController < ApplicationController
 
   def terms_and_conditions
   end
+
+  def refund_policy
+  end
+
+  def cancellation_policy
+  end
 end

@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   post 'send_enquiry' => "home#send_enquiry"
   get '/privacy_policy' => "home#privacy_policy"
   get '/terms-and-conditions' => "home#terms_and_conditions"
+  get '/refund-policy' => "home#refund_policy"
+  get '/cancellation-policy' => "home#cancellation_policy"
 end
